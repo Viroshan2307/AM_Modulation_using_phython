@@ -31,42 +31,24 @@ Algorithm
 6.	Plot the Signals: Use Matplotlib to plot the message signal, carrier signal, and modulated signal.
 
 Program
-```
-import numpy as np
-import matplotlib.pyplot as plt
-Am = 6.1
-fm = 484
-Ac = 12.2
-fc = 4840
-fs = 48400
-t = np.arange(0, 3/fm, 1/fs)
-m = Am * np.cos(2 * np.pi * fm * t)
-c = Ac * np.cos(2 * np.pi * fc * t)
-s = (Ac + m) * np.cos(2 * np.pi * fc * t)
-plt.subplot(3, 1, 1)
-plt.plot(t, m)
-plt.subplot(3, 1, 2)
-plt.plot(t, c)
-plt.subplot(3, 1, 3)
-plt.plot(t, s)
-plt.tight_layout()
-plt.show()
-```
+<img width="710" height="529" alt="Screenshot 2025-11-28 161017" src="https://github.com/user-attachments/assets/d999490e-06d0-4d7e-8d5a-f1e37df75e3c" />
+
 
 Output Waveform
 
-<img width="790" height="588" alt="image" src="https://github.com/user-attachments/assets/381334ab-4433-42d6-844a-b1b943f4f4d4" />
+<img width="830" height="593" alt="Screenshot 2025-11-28 161023" src="https://github.com/user-attachments/assets/78a0f387-e40c-4fc7-b2f2-025a5b5fb4b4" />
+
 
 
 Tabular Column
+![WhatsApp Image 2025-11-28 at 16 12 32_2a6ffdc2](https://github.com/user-attachments/assets/66ec2cae-4133-4a07-82f8-d4986b411178)
 
-![WhatsApp Image 2025-11-23 at 14 57 13_b4549b4f](https://github.com/user-attachments/assets/2db98155-0d24-4046-b993-592f518965da)
 
 Calculation
 
 
-ma (Theory) = am/ac = 6.1/12.2=0.5
-ma(Practical) = (Emax-Emin)/(Emax+Emin) =6.1/18.3=0.5
+ma (Theory) = am/ac = 6.7/13.4=0.5
+ma(Practical) = (Emax-Emin)/(Emax+Emin) =13/27.2=0.477
 
 
 
